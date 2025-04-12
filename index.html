@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTO - Transport Payment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="./db5f5b22a33e15ad82030e2cbf3a6919.jpg" alt="ATTO Logo" class="nav-logo">
+            <h1>ATTO</h1>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="active">Главная</a>
+            <a href="history.html">История поездок</a>
+            <a href="transport.html">Транспорт</a>
+            <a href="about.html">О нас</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="payment-card">
+            <h2>QR Оплата</h2>
+            <div class="qr-scanner">
+                <div id="qr-reader"></div>
+                <button id="scan-btn" class="btn-primary">Сканировать QR-код</button>
+            </div>
+        </div>
+
+        <div class="recent-trips">
+            <h3>Последние поездки</h3>
+            <div class="trip-list" id="tripList">
+                <!-- Trips will be populated by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="app.js"></script>
+</body>
+</html>
